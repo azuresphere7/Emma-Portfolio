@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <title>Eunhee Ryu / Portrait Works</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+            padding: 20px;
+        }
+    
+        img {
+            width: 100%;
+        }
+    
+        nav {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            justify-content: space-between;
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            background: white;
+            z-index: 10;
+        }
+    
+        nav::after {
+            content: "";
+            background: rgba(0,0,0, 0.1);
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            width: calc(100% - 40px);
+            height: 1px;
+            transform: translate(-50%, -50%);
+        }
+    
+        nav h1, nav label {
+            font-family: "Oswald", sans-serif;
+            text-transform: uppercase;
+            transform: scaleY(1.3);
+        }
+    
+        nav h1 {
+            font-size: 1em;
+        }
+    
+        nav label {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #ff6699;
+            position: relative;
+            top: -1.5px;
+            z-index: 10;
+        }
+    
+        .wrapper {
+            position: fixed;
+            top: -100vh;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background: rgba(255, 255, 255, 0.9);
+            transition: top 0.75s;
+            z-index: 1;
+        }
+    
+        #active:checked ~ .wrapper {
+            top: 0px;
+        }
+    
+        .wrapper ul {
+            font-family: "Oswald", sans-serif;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            list-style: none;
+            text-align: center;
+        }
+        .wrapper ul li {
+            margin: 30px 0;
+        }
+    
+        .wrapper ul li a {
+            color: black;
+            font-size: 3em;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    
+        input[type=checkbox] {
+            display: none;
+        }
+    
+        footer {
+            font-family: "Oswald", sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            top: calc(100vh - 115px);
+            font-size: 0.75em;
+        }
+    
+        footer a {
+            color: black;
+            text-decoration: underline;
+        }
+    
+        header {
+            margin-top: 34px;
+            margin-bottom: 20px;
+            padding-top: 18px;
+        }
+    
+        header img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            width: 30px;
+        }
+    
+        header h1 {
+            font-family: "Oswald", sans-serif;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            text-align: center;
+            transform: scaleY(1.3);
+            margin-bottom: 10px;
+        }
+    
+        header p {
+            font-family: "Oswald", sans-serif;
+            font-size: 0.55em;
+            font-style: italic;
+            color: #f69;
+            width: 290px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    
+        .grid-container {
+            display: block;
+            columns: 1;
+        }
+    
+        .grid-container > * {
+            margin-bottom: 20px;
+        }
+    
+        @media (min-width: 600px) {
+            header {
+                margin-top: 40px;
+                margin-bottom: 45px;
+            }
+    
+            header img {
+                width: 55px;
+                margin-bottom: 5px;
+            }
+    
+            header h1 {
+                font-size: 4em;
+                margin-bottom: 20px;
+            }
+    
+            header p {
+                font-size: 0.75em;
+                width: 350px;
+            }
+    
+            .grid-container {
+                columns: 2;
+            }
+        }
+    
+        @media (min-width: 960px) {
+            nav label {
+                display: none;
+            }
+    
+            .wrapper {
+                position: initial;
+                background: none;
+                transition: none;
+                height: 26px;
+                width: 250px;
+            }
+    
+            .wrapper ul {
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                position: initial;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+            }
+    
+            .wrapper ul li {
+                text-align: right;
+                margin: 0;
+            }
+    
+            .wrapper ul li a {
+                font-size: 0.75em;
+                font-weight: 300;
+            }
+    
+            .wrapper ul li a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6699;
+                text-decoration-thickness: 3px;
+            }
+    
+            #active:checked ~ .wrapper {
+                top: 0;
+            }
+    
+            footer {
+                display: block;
+                position: absolute;
+                top: 89vh;
+                left: calc(100vw - 227px);
+                text-align: left;
+                background: rgba(255, 255, 255, 0.5);
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="portrait">
+        <nav>
+            <h1>Eunhee Ryu / Photographer</h1>
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn">Menu</label>
+            <div class="wrapper">
+                <ul class="menu">
+                    <li><a href="portrait.html">Portrait</a></li>
+                    <li><a href="fashion.html">Fashion</a></li>
+                    <li><a href="landscape.html">Landscape</a></li> 
+                    <li><a href="https://www.youtube.com/watch?v=YQHsXMglC9A">Contact</a></li>
+                </ul>
+                <footer>
+                    <p>Legal Notices<br>Copyright &#169; 2021 Eunhee Ryu<br>
+                        <a href="https://github.com/">Designed by Jordan Mehravar</a></p>
+                </footer>
+            </div>
+        </nav>
+        <header>
+            <img src="cursive-works.svg" alt="Eunhee's cursive writing.">
+            <h1>Portrait</h1>
+            <p>A portrait is the subtle yet important relationship between photographer and subject.
+                Their hidden relationship and distance unite to create one masterpiece.</p>
+        </header>
+        <div class="grid-container">
+            <img src="images/portait/pexels-anastasia-shuraeva-4091205.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-andrea-piacquadio-839011.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-brandan-saviour-2741701.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-cottonbro-5119214.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-daniel-xavier-1212984.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-jenna-hamra-1054422.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-jonaorle-3828268.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-juan-pablo-serrano-arenas-1139743.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-khoa-võ-4016610.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-mental-health-america-(mha)-5543421.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-meru-bi-6908087.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-mikotoraw-4985017.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-min-an-713312.jpg" alt="Image from pexels.com.">
+            <img src="images/portait/pexels-rachel-claire-4993100.jpg" alt="Image from pexels.com.">
+        </div>
+    </section>
+</body>
+</html>
