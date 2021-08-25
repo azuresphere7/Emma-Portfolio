@@ -7,11 +7,13 @@
     padding: 0;
 }
 
-body {
+.portrait,
+.fashion,
+.landscape {
     padding: 20px;
 }
 
-img {
+.grid__image {
     width: 100%;
 }
 
@@ -162,7 +164,7 @@ img {
     columns: 1;
 }
 
-.grid > * {
+.grid__image {
     margin-bottom: 20px;
 }
 
