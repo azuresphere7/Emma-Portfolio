@@ -23,7 +23,7 @@
             width: 100%;
         }
     
-        nav {
+        .nav {
             display: flex;
             position: fixed;
             width: 100%;
@@ -38,7 +38,7 @@
             z-index: 10;
         }
     
-        nav::after {
+        .nav::after {
             content: "";
             background: rgba(0,0,0, 0.1);
             position: absolute;
@@ -49,17 +49,17 @@
             transform: translate(-50%, -50%);
         }
     
-        nav h1, nav label {
+        .nav__heading, .nav__btn {
             font-family: "Oswald", sans-serif;
             text-transform: uppercase;
             transform: scaleY(1.3);
         }
     
-        nav h1 {
+        .nav__heading {
             font-size: 1em;
         }
-    
-        nav label {
+
+        .nav__btn {
             font-size: 1.1em;
             font-weight: 700;
             color: #ff6699;
@@ -68,7 +68,7 @@
             z-index: 10;
         }
     
-        .wrapper {
+        .nav__content {
             position: fixed;
             top: -100vh;
             left: 0;
@@ -79,11 +79,11 @@
             z-index: 1;
         }
     
-        #active:checked ~ .wrapper {
+        #nav__input:checked ~ .nav__content {
             top: 0px;
         }
     
-        .wrapper ul {
+        .nav__list {
             font-family: "Oswald", sans-serif;
             position: absolute;
             top: 40%;
@@ -92,22 +92,27 @@
             list-style: none;
             text-align: center;
         }
-        .wrapper ul li {
+
+        .nav__title,
+        .nav__portrait,
+        .nav__fashion,
+        .nav__landscape,
+        .nav__contact {
             margin: 30px 0;
         }
     
-        .wrapper ul li a {
+        .nav__link {
             color: black;
             font-size: 3em;
             text-transform: uppercase;
             font-weight: 700;
         }
     
-        input[type=checkbox] {
+        #nav__input {
             display: none;
         }
     
-        footer {
+        .footer {
             font-family: "Oswald", sans-serif;
             text-align: center;
             text-transform: uppercase;
@@ -116,25 +121,25 @@
             font-size: 0.75em;
         }
     
-        footer a {
+        .footer__link {
             color: black;
             text-decoration: underline;
         }
     
-        header {
+        .header {
             margin-top: 34px;
             margin-bottom: 20px;
             padding-top: 18px;
         }
     
-        header img {
+        .header__cursive {
             display: block;
             margin: 0 auto;
             margin-bottom: 10px;
             width: 30px;
         }
     
-        header h1 {
+        .header__title {
             font-family: "Oswald", sans-serif;
             font-size: 2.5em;
             text-transform: uppercase;
@@ -143,7 +148,7 @@
             margin-bottom: 10px;
         }
     
-        header p {
+        .header__text {
             font-family: "Oswald", sans-serif;
             font-size: 0.55em;
             font-style: italic;
@@ -153,47 +158,47 @@
             margin: 0 auto;
         }
     
-        .grid-container {
+        .grid {
             display: block;
             columns: 1;
         }
     
-        .grid-container > * {
+        .grid > * {
             margin-bottom: 20px;
         }
     
         @media (min-width: 600px) {
-            header {
+            .header {
                 margin-top: 40px;
                 margin-bottom: 45px;
             }
     
-            header img {
+            .header__cursive {
                 width: 55px;
                 margin-bottom: 5px;
             }
     
-            header h1 {
+            .header__title {
                 font-size: 4em;
                 margin-bottom: 20px;
             }
     
-            header p {
+            .header__text {
                 font-size: 0.75em;
                 width: 350px;
             }
     
-            .grid-container {
+            .grid {
                 columns: 2;
             }
         }
     
         @media (min-width: 960px) {
-            nav label {
+            .nav__btn {
                 display: none;
             }
     
-            .wrapper {
+            .nav__content {
                 position: initial;
                 background: none;
                 transition: none;
@@ -201,7 +206,7 @@
                 width: 250px;
             }
     
-            .wrapper ul {
+            .nav__list {
                 height: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -211,27 +216,31 @@
                 transform: translate(0, 0);
             }
     
-            .wrapper ul li {
+            .nav__title,
+            .nav__portrait,
+            .nav__fashion,
+            .nav__landscape,
+            .nav__contact {
                 text-align: right;
                 margin: 0;
             }
     
-            .wrapper ul li a {
+            .nav__link {
                 font-size: 0.75em;
                 font-weight: 300;
             }
-    
-            .wrapper ul li a:hover {
+
+            .nav__link:hover {
                 text-decoration: underline;
                 text-decoration-color: #ff6699;
                 text-decoration-thickness: 3px;
             }
     
-            #active:checked ~ .wrapper {
+            #nav__input:checked ~ .nav__content {
                 top: 0;
             }
     
-            footer {
+            .footer {
                 display: block;
                 position: absolute;
                 top: 89vh;
@@ -244,31 +253,31 @@
     </style>
 </head>
 <body>
-    <section id="fashion">
-        <nav>
-            <h1>Eunhee Ryu / Photographer</h1>
-            <input type="checkbox" id="active">
-            <label for="active" class="menu-btn">Menu</label>
-            <div class="wrapper">
-                <ul class="menu">
-                    <li><a href="portrait.html">Portrait</a></li>
-                    <li><a href="fashion.html">Fashion</a></li>
-                    <li><a href="landscape.html">Landscape</a></li> 
-                    <li><a href="https://www.youtube.com/watch?v=YQHsXMglC9A">Contact</a></li>
+    <section class="portrait">
+        <nav class="nav">
+            <h1 class="nav__heading">Eunhee Ryu / Photographer</h1>
+            <input id="nav__input" type="checkbox" autocomplete="off">
+            <label class="nav__btn" for="nav__input">Menu</label>
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <li class="nav__portrait"><a class="nav__link" href="portrait.html">Portrait</a></li>
+                    <li class="nav__fashion"><a class="nav__link" href="fashion.html">Fashion</a></li>
+                    <li class="nav__landscape"><a class="nav__link" href="landscape.html">Landscape</a></li> 
+                    <li class="nav__contact"><a class="nav__link" href="https://www.youtube.com/watch?v=YQHsXMglC9A">Contact</a></li>
                 </ul>
-                <footer>
-                    <p>Legal Notices<br>Copyright &#169; 2021 Eunhee Ryu<br>
-                        <a href="https://github.com/">Designed by Jordan Mehravar</a></p>
+                <footer class="footer">
+                    <p class="footer__content">Legal Notices<br>Copyright &#169; 2021 Eunhee Ryu<br>
+                        <a class="footer__link" href="https://github.com/">Designed by Jordan</a></p>
                 </footer>
             </div>
         </nav>
-        <header>
-            <img src="cursive-works.svg" alt="Eunhee's cursive writing.">
-            <h1>Fashion</h1>
-            <p>Fashion photos need sensory novelty and must capture the essence of times.
+        <header class="header">
+            <img class="header__cursive" src="cursive-works.svg" alt="Eunhee's cursive writing.">
+            <h1 class="header__title">Fashion</h1>
+            <p class="header__text">Fashion photos need sensory novelty and must capture the essence of times.
                 <br>They hold the present moment, a past feeling, and the future era.</p>
         </header>
-        <div class="grid-container">
+        <div class="grid">
             <img src="images/fashion/pexels-andrea-piacquadio-837140.jpg" alt="Image from pexels.com.">
             <img src="images/fashion/pexels-andrea-piacquadio-994234.jpg" alt="Image from pexels.com.">
             <img src="images/fashion/pexels-cole-keister-2466756.jpg" alt="Image from pexels.com.">

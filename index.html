@@ -5,39 +5,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet"> 
     <title>Eunhee Ryu / Photographer</title>
-
 </head>
 <body>
-    <section class="home-page">
+    <section class="home">
         <header class="header">
             <h1 class="header__name">Eunhee Ryu / Photographer</h1>
-            <nav class="navigation">
-                <label class="label">
-                    Menu
-                    <input class="label__input" type="checkbox" autocomplete="off">
-                </label>
-                <div class="menu">
-                    <ul class="list">
-                        <li class="title">Menu</li>
-                        <li class="portait"><a class="portrait__link" href="portrait.html">Portrait</a></li>
-                        <li class="fashion"><a class="fashion__link" href="fashion.html">Fashion</a></li>
-                        <li class="landscape"><a class="landscape__link" href="landscape.html">Landscape</a></li> 
-                        <li class="contact"><a class="contact__link" href="https://www.youtube.com/watch?v=YQHsXMglC9A">Contact</a></li>
+            <nav class="nav">
+                <input id="nav__input" type="checkbox" autocomplete="off">
+                <label class="nav__btn" for="nav__input" >Menu</label>
+                <div class="nav__content">
+                    <ul class="nav__list">
+                        <li class="nav__title">Menu</li>
+                        <li class="nav__portrait"><a class="nav__link" href="portrait.html">Portrait</a></li>
+                        <li class="nav__fashion"><a class="nav__link" href="fashion.html">Fashion</a></li>
+                        <li class="nav__landscape"><a class="nav__link" href="landscape.html">Landscape</a></li> 
+                        <li class="nav__contact"><a class="nav__link" href="https://www.youtube.com/watch?v=YQHsXMglC9A">Contact</a></li>
                     </ul>
                     <footer class="footer">
-                        <p class="credits">Legal Notices<br>Copyright &#169; 2021 Eunhee Ryu<br>
-                            <a class="credits__link" href="https://github.com/">Designed by Jordan Mehravar</a></p>
+                        <p class="footer__content">Legal Notices<br>Copyright &#169; 2021 Eunhee Ryu<br>
+                            <a class="footer__link" href="https://github.com/">Designed by Jordan</a></p>
                     </footer>
                 </div>
             </nav>
         </header>
-        <p class="home-page__poem">
+        <p class="home__poem">
             The world takes place in the light.<br>
             I carry the light inside me even after mortal death.<br>
             Photographer is the messenger of light from parts of life.<br>
             I share the world with this magical box.
         </p>
-        <img class="home-page__writing" src="handwriting.svg" alt="Eunhee's handwriting.">
+        <img class="home__writing" src="handwriting.svg" alt="Eunhee's handwriting.">
     </section>
 </body>
 <style>
@@ -49,7 +46,7 @@
         padding: 0;
     }
 
-    .home-page {
+    .home {
         background-image: url("photo.jpg");
         background-size: cover;
         background-position: top;
@@ -77,7 +74,15 @@
         width: 200px;
     }
 
-    .navigation__btn {
+    #nav__input {
+        display: none;
+    }
+
+    #nav__input:checked ~ .nav__content {
+        top: 0px;
+    }
+
+    .nav__btn {
         font-size: 1.5em;
         text-transform: uppercase;
         text-decoration: underline;
@@ -86,11 +91,11 @@
         top: 8px;
     }
 
-    .navigation {
+    .nav {
         align-self: flex-end;
     }
 
-    .menu {
+    .nav__content {
         position: fixed;
         top: 100vh;
         left: 0;
@@ -101,7 +106,7 @@
         z-index: 1;
     }
 
-    .list {
+    .nav__list {
         position: absolute;
         top: 40%;
         left: 50%;
@@ -110,36 +115,23 @@
         text-align: center;
     }
 
-    .title,
-    .portrait,
-    .landscape,
-    .fashion,
-    .contact {
+    .nav__title,
+    .nav__portrait,
+    .nav__landscape,
+    .nav__fashion,
+    .nav__contact {
         margin: 30px 0;
     }
 
-    .title {
+    .nav__title {
         display: none;
     }
 
-    .title__link,
-    .portrait__link,
-    .landscape__link,
-    .fashion__link,
-    .contact__link {
+    .nav__link {
         color: black;
         font-size: 3em;
         text-transform: uppercase;
         font-weight: 700;
-    }
-
-    .label:checked {
-        /* display: none; */
-        font-size: 24px;
-    }
-
-    .label__input:checked {
-        /* font-size: 24px; */
     }
 
     .footer {
@@ -150,12 +142,12 @@
         font-size: 0.75em;
     }
 
-    .credits__link {
+    .footer__credits {
         color: black;
         text-decoration: underline;
     }
 
-    .home-page__poem {
+    .home__poem {
         position: absolute;
         top: 1.5%;
         left: 98vw;
@@ -167,23 +159,27 @@
         transform-origin: top left;
     }
 
-    .home-page__writing {
+    .home__writing {
         position: absolute;
         top: 6%;
         left: 20px;
         transform: scale(0.95) rotate(-20deg);
     }
 
-    .navigation__btn, .home-page__poem, .title {
+    .nav__btn, .home__poem, .nav__title {
         color: #ff6699;
     }
 
     @media (min-width: 600px) {
-        .navigation__btn {
+        .nav__btn {
             display: none;
         }
 
-        .home-page {
+        #nav__input:checked ~ .nav__content {
+            top: 30px;
+        }
+
+        .home {
             height: 100%;
             background-position-y: 30%;
             padding: 30px;
@@ -200,20 +196,20 @@
             width: 100%;
         }
 
-        .home-page__poem {
+        .home__poem {
             position: static;
             font-size: 0.8em;
             transform: rotate(0deg);
         }
 
-        .home-page__writing {
+        .home__writing {
             transform: rotate(0deg) scale(1);
             width: 19%;
             top: 60%;
             left: 56px;
         }
 
-        .menu {
+        .nav__content {
             display: flex;
             flex-flow: row-reverse nowrap;
             justify-content: space-between;
@@ -225,68 +221,60 @@
             background: none;
         }
 
-        .list, .footer {
+        .nav__list, .footer {
             position: static;
             text-align: left;
             align-self: end;
         }
 
-        .list {
+        .nav__list {
             transform: translate(0, 0);
         }
 
-        .title,
-        .portrait,
-        .landscape,
-        .fashion,
-        .contact {
+        .nav__title,
+        .nav__portrait,
+        .nav__landscape,
+        .nav__fashion,
+        .nav__contact {
             margin: 0;
             transform: scaleY(1.3);
         }
 
-        .title {
+        .nav__title {
             display: initial;
             font-size: 1.5em;
             font-style: italic;
         }
 
-        .title__link,
-        .portrait__link,
-        .landscape__link,
-        .fashion__link,
-        .contact__link {
+        .nav__link {
             font-size: 2.2em; 
         }
 
-        .title__link:hover,
-        .portrait__link:hover,
-        .landscape__link:hover,
-        .fashion__link:hover,
-        .contact__link:hover {
+        .nav__link:hover {
             text-decoration: line-through;
             text-decoration-color: rgba(255, 102, 153, 0.5);
             text-decoration-thickness: 8px;
         }
 
-        .contact {
+        .nav__contact {
             margin-bottom: -2px;
         }
 
-        .credits {
+        .footer__credits {
             font-size: 0.9em;
         }
     }
 
     @media (min-width: 960px) {
-        .home-page {
+        .home {
             background-size: auto 100% ;
         }
 
-        .menu {
+        .nav__content {
             display: block;
         }
 
-        .list {
+        .nav__list {
             position: absolute;
             left: calc(50vw + 280px);
             top: calc(100vh - 300px);
@@ -297,7 +285,7 @@
             top: calc(100vh - 109px);
         }
 
-        .home-page__writing {
+        .home__writing {
             width: 165px;
             top: 32%;
             left: calc(50vw - 370px);
@@ -305,11 +293,11 @@
     }
 
     @media (min-width: 1440px) {
-        .list {
+        .nav__list {
             left: calc(50vw + 320px);
         }
 
-        .home-page__writing {
+        .home__writing {
             width: 175px;
             top: 40%;
             left: calc(50vw - 418px);
@@ -317,11 +305,11 @@
     }
 
     @media (min-width: 1920px) {
-        .list {
+        .nav__list {
             left: calc(50vw + 350px);
         }
 
-        .home-page__writing {
+        .home__writing {
             left: calc(50vw - 445px);
         }
     }
