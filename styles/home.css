@@ -273,3 +273,13 @@
         left: calc(50vw - 445px);
     }
 }
+
+@media (min-height: 1080px) {
+    .nav__list {
+        left: calc(50vw + 380px);
+    }
+
+    .home__writing {
+        left: calc(50vw - 475px);
+    }
+}
