@@ -5,10 +5,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../styles/page.css">
+    <link rel="stylesheet" href="../styles/load.css">
     <title>Eunhee Ryu / Landscape Works</title>
-
 </head>
 <body>
+    <div class="loader" id="loader">
+        <div class="loader__grid">
+            <div class="loader__cell-1"></div>
+            <div class="loader__cell-2"></div>
+            <div class="loader__cell-3"></div>
+            <div class="loader__cell-4"></div>
+            <div class="loader__cell-5"></div>
+            <div class="loader__cell-6"></div>
+            <div class="loader__cell-7"></div>
+            <div class="loader__cell-8"></div>
+            <div class="loader__cell-9"></div>
+        </div>
+    </div>
     <section class="landscape">
         <nav class="nav">
             <h1 class="nav__heading"><a class="nav__home" href="../index.html">Eunhee Ryu / Photographer</a></h1>
@@ -16,10 +29,11 @@
             <label class="nav__btn" for="nav__input">Menu</label>
             <div class="nav__content">
                 <ul class="nav__list">
+                    <li class="nav__main"><a class="nav__link" href="../index.html">Home</a></li>
                     <li class="nav__portrait"><a class="nav__link" href="portrait.html">Portrait</a></li>
                     <li class="nav__fashion"><a class="nav__link" href="fashion.html">Fashion</a></li>
                     <li class="nav__landscape"><a class="nav__link" href="landscape.html">Landscape</a></li> 
-                    <li class="nav__contact"><a class="nav__link" href="">Contact</a></li>
+                    <li class="nav__contact"><a class="nav__link" href="contact.html">Contact</a></li>
                 </ul>
                 <footer class="footer">
                     <p class="footer__content">Legal Notices<br>Copyright &#169; 2021 Eunhee Ryu<br>
@@ -50,5 +64,6 @@
             <img class="grid__image" src="../images/landscape/pexels-ákos-szabó-440731.jpg" alt="Image from pexels.com.">
         </div>
     </section>
+    <script src="../load.js"></script>
 </body>
 </html>
