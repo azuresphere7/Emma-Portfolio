@@ -1,0 +1,66 @@
+.home
+    background-image: url("../images/photo.jpg")
+    background-size: cover
+    background-position: top
+    background-clip: content-box
+    background-repeat: no-repeat
+    padding: 20px
+    height: calc(100vh - 85px)
+
+    &__poem
+        position: absolute
+        top: 1.5%
+        left: 98vw
+        width: 280px
+        font-family: Oswald, sans-serif
+        font-size: 0.7em
+        font-style: italic
+        transform: rotate(90deg)
+        transform-origin: top left
+        color: #ff6699
+
+    &__writing
+        position: absolute
+        top: 6%
+        left: 20px
+        transform: scale(0.95) rotate(-20deg)
+
+@media (min-width: 600px)
+    .home
+        height: 100vh
+        background-position-y: 30%
+        padding: 30px
+
+        &__poem
+            position: static
+            font-size: 0.8em
+            transform: rotate(0deg)
+
+        &__writing
+            transform: rotate(0deg) scale(1)
+            width: 19%
+            top: 60%
+            left: 56px
+
+@media (min-width: 960px)
+    .home
+        background-size: auto 100%
+
+        &__writing
+            width: 165px
+            top: 32%
+            left: calc(50vw - 370px)
+
+@media (min-width: 1440px)
+    .home__writing
+        width: 175px
+        top: 40%
+        left: calc(50vw - 418px)
+
+@media (min-width: 1920px)
+    .home__writing
+        left: calc(50vw - 445px)
+
+@media (min-height: 1080px)
+    .home__writing
+        left: calc(50vw - 475px)

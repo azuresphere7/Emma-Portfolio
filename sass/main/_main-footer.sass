@@ -1,0 +1,24 @@
+.footer
+    text-align: center
+    text-transform: uppercase
+    position: relative
+    top: calc(100vh - 180px)
+    font-size: 0.75em
+
+    &__credits
+        color: black
+        text-decoration: underline
+
+@media (min-width: 600px)
+    .footer
+        position: static
+        text-align: left
+        align-self: end
+
+        &__credits
+            font-size: 0.9em
+
+@media (min-width: 960px)
+    .footer
+        position: absolute
+        top: calc(100vh - 109px)

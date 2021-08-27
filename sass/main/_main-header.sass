@@ -1,0 +1,25 @@
+.header
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    position: relative
+    top: calc(100vh - 100px)
+    font-family: "Oswald", sans-serif
+    font-weight: 400
+
+    &__name
+        text-transform: uppercase
+        transform: scaleY(1.2)
+        font-size: 1.75em
+        line-height: 1em
+        width: 200px
+
+@media (min-width: 600px)
+    .header
+        display: block
+        position: static
+        margin-bottom: 10px
+
+        &__name
+            font-size: 2.4em
+            width: 100%
