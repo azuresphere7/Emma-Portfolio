@@ -1,8 +1,10 @@
+@use '../_variables' as v
+
 .info
-    background: black
+    background: v.$info-bg
     width: 100vw
     height: 100vh
-    font-family: "Oswald", sans-serif
+    font-family: v.$font-stack
     font-style: normal
     text-transform: uppercase
     text-align: center
@@ -16,7 +18,6 @@
         left: 50%
 
     &__email,
-
     &__phone
-        color: white
+        color: v.$info-color
         text-decoration: none

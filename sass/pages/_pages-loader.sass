@@ -1,5 +1,7 @@
+@use '../_variables' as v
+
 .loader
-    background: white
+    background: v.$background
     width: 100vw
     height: 100vh
 
@@ -33,7 +35,7 @@
         width: 16px
         height: 16px
         border-radius: 50%
-        background: #ff6699
+        background: v.$accent
         animation: loader__grid 1.2s linear infinite
 
     &__cell-1

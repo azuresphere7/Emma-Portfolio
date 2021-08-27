@@ -1,3 +1,5 @@
+@use '../_variables' as v
+
 .home
     background-image: url("../images/photo.jpg")
     background-size: cover
@@ -17,7 +19,7 @@
         font-style: italic
         transform: rotate(90deg)
         transform-origin: top left
-        color: #ff6699
+        color: v.$accent
 
     &__writing
         position: absolute

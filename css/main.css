@@ -7,6 +7,16 @@
   padding: 0;
 }
 
+body {
+  background: #fff;
+}
+
+.portrait,
+.fashion,
+.landscape {
+  padding: 20px;
+}
+
 .footer {
   text-align: center;
   text-transform: uppercase;
@@ -14,9 +24,15 @@
   top: calc(100vh - 180px);
   font-size: 0.75em;
 }
-.footer__credits {
-  color: black;
+.footer__content {
+  color: #000;
+}
+.footer__link {
+  color: #000;
   text-decoration: underline;
+}
+.footer__link, .footer__link:visited, .footer__link:hover, .footer__link:active {
+  color: inherit;
 }
 
 @media (min-width: 600px) {
@@ -41,11 +57,12 @@
   justify-content: space-between;
   position: relative;
   top: calc(100vh - 100px);
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   font-weight: 400;
 }
 .header__name {
   text-transform: uppercase;
+  color: #000;
   transform: scaleY(1.2);
   font-size: 1.75em;
   line-height: 1em;
@@ -82,7 +99,7 @@
   font-style: italic;
   transform: rotate(90deg);
   transform-origin: top left;
-  color: #ff6699;
+  color: #f69;
 }
 .home__writing {
   position: absolute;
@@ -161,17 +178,17 @@
   margin: 30px 0;
 }
 .nav__title {
-  color: #ff6699;
+  color: #f69;
   display: none;
 }
 .nav__link {
-  color: black;
+  color: #000;
   font-size: 3em;
   text-transform: uppercase;
   font-weight: 700;
 }
 .nav__btn {
-  color: #ff6699;
+  color: #f69;
   font-size: 1.5em;
   text-transform: uppercase;
   text-decoration: underline;

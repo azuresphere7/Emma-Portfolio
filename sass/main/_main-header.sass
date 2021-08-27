@@ -1,14 +1,17 @@
+@use '../_variables' as v
+
 .header
     display: flex
     flex-flow: row nowrap
     justify-content: space-between
     position: relative
     top: calc(100vh - 100px)
-    font-family: "Oswald", sans-serif
+    font-family: v.$font-stack
     font-weight: 400
 
     &__name
         text-transform: uppercase
+        color: v.$font-color
         transform: scaleY(1.2)
         font-size: 1.75em
         line-height: 1em

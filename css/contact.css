@@ -7,8 +7,18 @@
   padding: 0;
 }
 
+body {
+  background: #fff;
+}
+
+.portrait,
+.fashion,
+.landscape {
+  padding: 20px;
+}
+
 .footer {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   text-align: center;
   text-transform: uppercase;
   position: relative;
@@ -16,8 +26,11 @@
   font-size: 0.75em;
 }
 .footer__link {
-  color: black;
+  color: Oswald, sans-serif;
   text-decoration: underline;
+}
+.footer__link, .footer__link:visited, .footer__link:hover, .footer__link:active {
+  color: inherit;
 }
 
 @media (min-width: 960px) {
@@ -43,15 +56,16 @@
   width: 30px;
 }
 .header__title {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   font-size: 2.5em;
   text-transform: uppercase;
   text-align: center;
   transform: scaleY(1.3);
   margin-bottom: 10px;
+  color: #000;
 }
 .header__text {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   font-size: 0.55em;
   font-style: italic;
   color: #f69;
@@ -79,10 +93,10 @@
   }
 }
 .info {
-  background: black;
+  background: #000;
   width: 100vw;
   height: 100vh;
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   font-style: normal;
   text-transform: uppercase;
   text-align: center;
@@ -96,7 +110,7 @@
   left: 50%;
 }
 .info__email, .info__phone {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -111,24 +125,25 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
-  background: white;
+  background: #fff;
   z-index: 10;
 }
 .nav__home, .nav__home:visited, .nav__home:hover, .nav__home:active {
   color: inherit;
 }
 .nav__heading, .nav__btn {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   text-transform: uppercase;
   transform: scaleY(1.3);
 }
 .nav__heading {
   font-size: 1em;
+  color: #000;
 }
 .nav__btn {
   font-size: 1.1em;
   font-weight: 700;
-  color: #ff6699;
+  color: #f69;
   position: relative;
   top: -1.5px;
   z-index: 10;
@@ -144,7 +159,7 @@
   z-index: 1;
 }
 .nav__list {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald, sans-serif;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -156,7 +171,7 @@
   margin: 30px 0;
 }
 .nav__link {
-  color: black;
+  color: #000;
   font-size: 3em;
   text-transform: uppercase;
   font-weight: 700;
@@ -209,7 +224,7 @@
   }
   .nav__link:hover {
     text-decoration: underline;
-    text-decoration-color: #ff6699;
+    text-decoration-color: #f69;
     text-decoration-thickness: 3px;
   }
 }
@@ -218,21 +233,24 @@
 }
 
 .nav {
-  background: black;
-  color: white;
+  background: #000;
+  color: #fff;
+}
+.nav__heading {
+  color: #fff;
 }
 .nav::after {
-  background-color: white;
+  background-color: #fff;
 }
 .nav__content {
   background-color: rgba(0, 0, 0, 0.9);
 }
 .nav__link {
-  color: white;
+  color: #fff;
 }
 
 .footer__link {
-  color: white;
+  color: #fff;
 }
 
 /*# sourceMappingURL=contact.css.map */

@@ -1,5 +1,7 @@
+@use '../_variables' as v
+
 .footer
-    font-family: "Oswald", sans-serif
+    font-family: v.$font-stack
     text-align: center
     text-transform: uppercase
     position: relative
@@ -7,8 +9,14 @@
     font-size: 0.75em
 
     &__link
-        color: black
+        color: v.$font-stack
         text-decoration: underline
+
+    &__link,
+    &__link:visited,
+    &__link:hover,
+    &__link:active
+        color: inherit
 
 @media (min-width: 960px)
     .footer
@@ -17,5 +25,5 @@
         top: 89vh
         left: calc(100vw - 227px)
         text-align: left
-        background: rgba(255, 255, 255, 0.5)
+        background: rgba(v.$background, 0.5)
         padding: 20px

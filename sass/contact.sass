@@ -3,22 +3,26 @@
 @use 'pages/_pages-header'
 @use 'pages/_pages-info'
 @use 'pages/_pages-nav'
+@use '../sass/_variables' as v
 
 *
     overflow: hidden
 
 .nav
-    background: black
-    color: white
+    background: v.$info-bg
+    color: v.$info-color
+
+    &__heading
+        color: v.$info-color
 
     &::after
-        background-color: white
+        background-color: v.$info-color
 
     &__content
-        background-color: rgba(0, 0, 0, 0.9)
+        background-color: rgba(v.$info-bg, 0.9)
 
     &__link
-        color: white
+        color: v.$info-color
 
 .footer__link
-    color: white
+    color: v.$info-color
