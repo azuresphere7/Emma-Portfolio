@@ -1,0 +1,89 @@
+.loader
+    background: white
+    width: 100vw
+    height: 100vh
+
+    &__grid
+        display: inline-block
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 80px
+        height: 80px
+
+    &__cell-1,
+
+    &__cell-2,
+
+    &__cell-3,
+
+    &__cell-4,
+
+    &__cell-5,
+
+    &__cell-6,
+
+    &__cell-7,
+
+    &__cell-8,
+
+    &__cell-9
+        position: absolute
+        width: 16px
+        height: 16px
+        border-radius: 50%
+        background: #ff6699
+        animation: loader__grid 1.2s linear infinite
+
+    &__cell-1
+        top: 8px
+        left: 8px
+        animation-delay: 0s
+
+    &__cell-2
+        top: 8px
+        left: 32px
+        animation-delay: -0.4s
+
+    &__cell-3
+        top: 8px
+        left: 56px
+        animation-delay: -0.8s
+
+    &__cell-4
+        top: 32px
+        left: 8px
+        animation-delay: -0.4s
+
+    &__cell-5
+        top: 32px
+        left: 32px
+        animation-delay: -0.8s
+
+    &__cell-6
+        top: 32px
+        left: 56px
+        animation-delay: -1.2s
+
+    &__cell-7
+        top: 56px
+        left: 8px
+        animation-delay: -0.8s
+
+    &__cell-8
+        top: 56px
+        left: 32px
+        animation-delay: -1.2s
+
+    &__cell-9
+        top: 56px
+        left: 56px
+        animation-delay: -1.6s
+
+@keyframes loader__grid
+    0%, 100%
+        opacity: 1
+
+    50%
+        opacity: 0.5
