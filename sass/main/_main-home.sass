@@ -22,10 +22,18 @@
         color: v.$accent
 
     &__writing
+        font-family: "Homemade Apple", serif
+        font-size: 14px
+        color: v.$writing-color
+        font-style: italic
+        line-height: 18px
+        letter-spacing: -2px
+        text-align: center
+        font-weight: 900
         position: absolute
-        top: 6%
+        top: 8%
         left: 20px
-        transform: scale(0.95) rotate(-20deg)
+        transform: scale(0.95) rotate(-47deg)
 
 @media (min-width: 600px)
     .home
@@ -39,9 +47,10 @@
             transform: rotate(0deg)
 
         &__writing
-            transform: rotate(0deg) scale(1)
-            width: 19%
-            top: 60%
+            transform: rotate(-23deg) scale(1)
+            font-size: 2vw
+            line-height: 2.5vw
+            top: 61%
             left: 56px
 
 @media (min-width: 960px)
@@ -49,20 +58,7 @@
         background-size: auto 100%
 
         &__writing
-            width: 165px
-            top: 32%
-            left: calc(50vw - 370px)
-
-@media (min-width: 1440px)
-    .home__writing
-        width: 175px
-        top: 40%
-        left: calc(50vw - 418px)
-
-@media (min-width: 1920px)
-    .home__writing
-        left: calc(50vw - 445px)
-
-@media (min-height: 1080px)
-    .home__writing
-        left: calc(50vw - 475px)
+            font-size: 18px
+            line-height: 28px
+            top: 35%
+            left: calc(50vw - 44vh)

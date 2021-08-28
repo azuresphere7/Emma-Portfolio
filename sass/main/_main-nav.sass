@@ -15,7 +15,7 @@
 
     &__list
         position: absolute
-        top: 40%
+        top: calc(50% - 62px)
         left: 50%
         transform: translate(-50%, -50%)
         list-style: none
@@ -60,7 +60,7 @@
             flex-flow: row-reverse nowrap
             justify-content: space-between
             width: calc(100% - 60px)
-            height: calc(100% - 60px)
+            height: calc(100% - 61px)
             top: 30px
             left: 30px
             transition: none
@@ -86,9 +86,7 @@
             font-size: 2.2em
 
         &__link:hover
-            text-decoration: line-through
-            text-decoration-color: rgba(v.$accent, 0.5)
-            text-decoration-thickness: 8px
+            font-style: italic
 
         &__contact
             margin-bottom: -2px
@@ -103,17 +101,5 @@
 
             &__list
                 position: absolute
-                left: calc(50vw + 280px)
-                top: calc(100vh - 300px)
-
-    @media (min-width: 1440px)
-        .nav__list
-            left: calc(50vw + 320px)
-
-    @media (min-width: 1920px)
-        .nav__list
-            left: calc(50vw + 350px)
-
-    @media (min-height: 1080px)
-        .nav__list
-            left: calc(50vw + 380px)
+                left: calc(50vw + 35vh)
+                top: calc(100vh - 352px)

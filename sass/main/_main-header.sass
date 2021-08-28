@@ -5,17 +5,18 @@
     flex-flow: row nowrap
     justify-content: space-between
     position: relative
-    top: calc(100vh - 100px)
+    top: calc(100vh - 98px)
     font-family: v.$font-stack
     font-weight: 400
 
     &__name
+        position: relative
         text-transform: uppercase
         color: v.$font-color
         transform: scaleY(1.2)
-        font-size: 1.75em
+        font-size: 1.71em
         line-height: 1em
-        width: 200px
+        width: 210px
 
 @media (min-width: 600px)
     .header
@@ -24,5 +25,6 @@
         margin-bottom: 10px
 
         &__name
+            top: -3px
             font-size: 2.4em
             width: 100%
