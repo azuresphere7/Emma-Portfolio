@@ -174,7 +174,7 @@ body {
   list-style: none;
   text-align: center;
 }
-.nav__title, .nav__portrait, .nav__landscape, .nav__fashion, .nav__contact {
+.nav__title, .nav__item {
   margin: 30px 0;
 }
 .nav__title {
@@ -225,7 +225,7 @@ body {
     align-self: end;
     transform: translate(0, 0);
   }
-  .nav__title, .nav__portrait, .nav__landscape, .nav__fashion, .nav__contact {
+  .nav__title, .nav__item {
     margin: 0;
     transform: scaleY(1.3);
   }
