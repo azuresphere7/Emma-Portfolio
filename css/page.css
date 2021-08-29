@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #fff;
+  background: #101010;
 }
 
 .architecture,
@@ -25,11 +25,12 @@ body {
   position: relative;
   top: calc(100vh - 90px);
   padding-top: 20px;
+  color: #fff;
   left: 20px;
   font-size: 0.75em;
 }
 .footer__link {
-  color: Oswald, sans-serif;
+  color: "v.$font-color";
   text-decoration: underline;
 }
 .footer__link, .footer__link:visited, .footer__link:hover, .footer__link:active {
@@ -43,7 +44,7 @@ body {
     top: 89vh;
     left: calc(100vw - 247px);
     text-align: left;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(16, 16, 16, 0.5);
     padding: 20px;
     width: 300px;
   }
@@ -60,7 +61,7 @@ body {
   margin-bottom: 0px;
   text-align: center;
   font-family: "Homemade Apple", sans-serif;
-  color: #ff0000;
+  color: #6bd0ff;
 }
 .header__title {
   font-family: Oswald, sans-serif;
@@ -69,13 +70,13 @@ body {
   text-align: center;
   transform: scaleY(1.3);
   margin-bottom: 10px;
-  color: #000;
+  color: #fff;
 }
 .header__text {
   font-family: Oswald, sans-serif;
   font-size: 0.55em;
   font-style: italic;
-  color: #ff0000;
+  color: #1a74e2;
   width: 290px;
   text-align: center;
   margin: 0 auto;
@@ -96,7 +97,7 @@ body {
   }
   .header__text {
     font-size: 0.75em;
-    width: 350px;
+    width: 370px;
   }
 }
 .grid {
@@ -114,9 +115,10 @@ body {
   }
 }
 .loader {
-  background: #fff;
+  background: #101010;
   width: 100vw;
   height: 100vh;
+  z-index: 99;
 }
 .loader__grid {
   display: inline-block;
@@ -132,7 +134,7 @@ body {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #ff0000;
+  background: #1a74e2;
   animation: loader__grid 1.2s linear infinite;
 }
 .loader__cell-1 {
@@ -200,7 +202,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
-  background: #fff;
+  background: #101010;
   z-index: 10;
 }
 .nav__home, .nav__home:visited, .nav__home:hover, .nav__home:active {
@@ -213,12 +215,12 @@ body {
 }
 .nav__heading {
   font-size: 1em;
-  color: #000;
+  color: #fff;
 }
 .nav__btn {
   font-size: 1.1em;
   font-weight: 700;
-  color: #ff0000;
+  color: #1a74e2;
   position: relative;
   top: -1.5px;
   z-index: 10;
@@ -229,7 +231,7 @@ body {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(16, 16, 16, 0.9);
   transition: top 0.75s;
   z-index: 1;
 }
@@ -246,14 +248,14 @@ body {
   margin: 30px 0;
 }
 .nav__link {
-  color: #000;
+  color: #fff;
   font-size: 3em;
   text-transform: uppercase;
   font-weight: 700;
 }
 .nav:after {
   content: "";
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   position: absolute;
   top: 50px;
   left: 50%;
@@ -299,7 +301,7 @@ body {
   }
   .nav__link:hover {
     text-decoration: underline;
-    text-decoration-color: #ff0000;
+    text-decoration-color: #1a74e2;
     text-decoration-thickness: 3px;
   }
 }
