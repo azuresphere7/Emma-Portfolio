@@ -8,21 +8,24 @@
 }
 
 body {
-  background: #937266;
+  background: #fff;
 }
 
+.architecture,
+.landscape,
 .portrait,
-.fashion,
-.landscape {
+.animals {
   padding: 20px;
 }
 
 .footer {
   font-family: Oswald, sans-serif;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   position: relative;
-  top: calc(100vh - 115px);
+  top: calc(100vh - 90px);
+  padding-top: 20px;
+  left: 20px;
   font-size: 0.75em;
 }
 .footer__link {
@@ -38,10 +41,11 @@ body {
     display: block;
     position: absolute;
     top: 89vh;
-    left: calc(100vw - 227px);
+    left: calc(100vw - 247px);
     text-align: left;
-    background: rgba(147, 114, 102, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     padding: 20px;
+    width: 300px;
   }
 }
 .header {
@@ -49,11 +53,14 @@ body {
   margin-bottom: 20px;
   padding-top: 18px;
 }
-.header__cursive {
+.header__works {
+  font-size: 12px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 10px;
-  width: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: "Homemade Apple", sans-serif;
+  color: #ff0000;
 }
 .header__title {
   font-family: Oswald, sans-serif;
@@ -62,13 +69,13 @@ body {
   text-align: center;
   transform: scaleY(1.3);
   margin-bottom: 10px;
-  color: #302D33;
+  color: #000;
 }
 .header__text {
   font-family: Oswald, sans-serif;
   font-size: 0.55em;
   font-style: italic;
-  color: #d7c3ad;
+  color: #ff0000;
   width: 290px;
   text-align: center;
   margin: 0 auto;
@@ -79,9 +86,9 @@ body {
     margin-top: 40px;
     margin-bottom: 45px;
   }
-  .header__cursive {
-    width: 55px;
-    margin-bottom: 5px;
+  .header__works {
+    font-size: 24px;
+    margin-bottom: -10px;
   }
   .header__title {
     font-size: 4em;
@@ -107,7 +114,7 @@ body {
   }
 }
 .loader {
-  background: #937266;
+  background: #fff;
   width: 100vw;
   height: 100vh;
 }
@@ -125,7 +132,7 @@ body {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #d7c3ad;
+  background: #ff0000;
   animation: loader__grid 1.2s linear infinite;
 }
 .loader__cell-1 {
@@ -193,7 +200,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
-  background: #937266;
+  background: #fff;
   z-index: 10;
 }
 .nav__home, .nav__home:visited, .nav__home:hover, .nav__home:active {
@@ -206,12 +213,12 @@ body {
 }
 .nav__heading {
   font-size: 1em;
-  color: #302D33;
+  color: #000;
 }
 .nav__btn {
   font-size: 1.1em;
   font-weight: 700;
-  color: #d7c3ad;
+  color: #ff0000;
   position: relative;
   top: -1.5px;
   z-index: 10;
@@ -222,14 +229,14 @@ body {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: rgba(147, 114, 102, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   transition: top 0.75s;
   z-index: 1;
 }
 .nav__list {
   font-family: Oswald, sans-serif;
   position: absolute;
-  top: 40%;
+  top: calc(50% - 30px);
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
@@ -239,14 +246,14 @@ body {
   margin: 30px 0;
 }
 .nav__link {
-  color: #302D33;
+  color: #000;
   font-size: 3em;
   text-transform: uppercase;
   font-weight: 700;
 }
 .nav:after {
   content: "";
-  background: rgba(48, 45, 51, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 50px;
   left: 50%;
@@ -271,7 +278,7 @@ body {
     background: none;
     transition: none;
     height: 26px;
-    width: 300px;
+    width: 400px;
   }
   .nav__list {
     height: 100%;
@@ -292,7 +299,7 @@ body {
   }
   .nav__link:hover {
     text-decoration: underline;
-    text-decoration-color: #d7c3ad;
+    text-decoration-color: #ff0000;
     text-decoration-thickness: 3px;
   }
 }

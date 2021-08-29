@@ -8,12 +8,13 @@
 }
 
 body {
-  background: #937266;
+  background: #fff;
 }
 
+.architecture,
+.landscape,
 .portrait,
-.fashion,
-.landscape {
+.animals {
   padding: 20px;
 }
 
@@ -22,16 +23,16 @@ body {
   text-transform: uppercase;
   position: relative;
   top: calc(100vh - 90px);
-  background: #937266;
+  background: #fff;
   padding-top: 20px;
   left: 20px;
   font-size: 0.75em;
 }
 .footer__content {
-  color: #302D33;
+  color: #000;
 }
 .footer__link {
-  color: #302D33;
+  color: #000;
   text-decoration: underline;
 }
 .footer__link, .footer__link:visited, .footer__link:hover, .footer__link:active {
@@ -68,7 +69,7 @@ body {
 .header__name {
   position: relative;
   text-transform: uppercase;
-  color: #302D33;
+  color: #000;
   transform: scaleY(1.2);
   font-size: 1.71em;
   line-height: 1em;
@@ -88,7 +89,7 @@ body {
   }
 }
 .home {
-  background-image: url("../images/photo.jpg");
+  background-image: url("../images/matt.jpg");
   background-size: cover;
   background-position: top;
   background-clip: content-box;
@@ -106,12 +107,12 @@ body {
   font-style: italic;
   transform: rotate(90deg);
   transform-origin: top left;
-  color: #d7c3ad;
+  color: #ff0000;
 }
 .home__writing {
-  font-family: "Homemade Apple", serif;
+  font-family: "Homemade Apple", sans-serif;
   font-size: 14px;
-  color: #e8ecea;
+  color: #ff0000;
   font-style: italic;
   line-height: 18px;
   letter-spacing: -2px;
@@ -162,7 +163,7 @@ body {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: rgba(147, 114, 102, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   transition: top 0.75s;
   z-index: 1;
 }
@@ -178,17 +179,17 @@ body {
   margin: 30px 0;
 }
 .nav__title {
-  color: #d7c3ad;
+  color: #ff0000;
   display: none;
 }
 .nav__link {
-  color: #302D33;
+  color: #000;
   font-size: 3em;
   text-transform: uppercase;
   font-weight: 700;
 }
 .nav__btn {
-  color: #d7c3ad;
+  color: #ff0000;
   font-size: 1.5em;
   text-transform: uppercase;
   text-decoration: underline;
