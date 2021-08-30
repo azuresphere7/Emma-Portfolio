@@ -19,3 +19,8 @@ I used HTML and CSS with Sass for the site's layout and structure:
 - **Adobe Color –** I used this color palette generator for ideas and brain storming.
 - **Dropbox –** We used Dropbox to transfer images between machines.
 <br><br>
+
+## To-do
+- [ ] Simplify SASS to remove redundancies
+- [ ] Consider injecting HTML using JavaScript
+
