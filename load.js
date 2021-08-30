@@ -4,5 +4,6 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         document.getElementById("loader").style.display = "none";
         body.style.overflow = "auto"
-    }, 500);
+        console.log("done")
+    }, 200);
 });
