@@ -20,6 +20,11 @@ I used HTML and CSS with Sass for the site's layout and structure:
 - **Dropbox –** We used Dropbox to transfer images between machines.
 <br><br>
 
+## Resources
+- **Oswald Typeface –** https://fonts.google.com/specimen/Oswald?query=oswald 
+- **Homemade Apple Typeface –** https://fonts.google.com/specimen/Homemade+Apple?query=homemad
+<br><br>
+
 ## To-do
 - [ ] Simplify SASS to remove redundancies
 - [ ] Consider injecting HTML using JavaScript
