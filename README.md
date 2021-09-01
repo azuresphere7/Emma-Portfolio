@@ -1,8 +1,8 @@
-# Matt Mazzocchi | [Portfolio](https://supermariocape.xyz/) 
+# Matt Mazzocchi | [Portfolio](https://mazzmatt.com/index.html) 
 ![Screenshot of main screen for Matt's portfolio](https://i.ibb.co/0mKvgXw/1.jpg)
 
 ## Description
-[Matt Mazzocchi](https://supermariocape.xyz/) is a Canadian full-time architect with a passion for photography. We colloborated to build his portfolio.<br> 
+[Matt Mazzocchi](https://mazzmatt.com/index.html) is a Canadian full-time architect with a passion for photography. We colloborated to build his portfolio.<br> 
 Matt's work includes architecture, landscape, portrait, and animals. He's looking to explore portrait photography further.
 <br><br>
 
