@@ -1,4 +1,4 @@
-# Matt Mazzocchi | [Portfolio](https://mazzmatt.com/index.html) 
+# Matt Mazzocchi | [Demo](https://mazzmatt.com/index.html) 
 ![Screenshot of main screen for Matt's portfolio](https://i.ibb.co/0mKvgXw/1.jpg)
 
 ## Description
